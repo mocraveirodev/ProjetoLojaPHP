@@ -25,7 +25,8 @@
                 <?php } ?>
             <?php }else{ 
                 echo "<h1>Não tem produtos cadastrados nessa sessão! :(</h1>";
-             } ?>
+                }
+            ?>
             </div>
         </section>
     </main>
