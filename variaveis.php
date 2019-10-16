@@ -1,6 +1,8 @@
 <?php 
+    session_start();
     $nomeSistema = "Lojinhe";
-    $usuario = ["nome"=>"Monica"];
+    // $usuario = ["nome"=>"Monica"];
+    $usuario = isset($_SESSION["usuario"]) ? $_SESSION["usuario"] : [];
     $nomeArquivo = "produto.json";
     $produtos = json_decode(file_get_contents($nomeArquivo),true);
     // $produtos = [
